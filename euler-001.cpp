@@ -30,4 +30,5 @@ int main()
 		}
 		cout<<"The answer of the first question is:";
 		cout<<s;
+        return 0;
 }
