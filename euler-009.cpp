@@ -19,20 +19,24 @@
 using namespace std;
 int main()
 {
-    int a,b,c;
+    int a,b,flag=0,c;
     for (a = 1;a<333;a++)
+    {
+        if (flag)break;
         for(b = a;b<666;b++)
         {
             c = 1000 - a - b;
             if (a*a + b*b == c*c)
             {
+                flag = 1;
                 cout<<"The (a,b,c) is: ("<<a<<","<<b<<","<<c<<")"<<"\n";
                 int product;
                 product = a * b * c;
                 cout<<"The product of a,b,c is: "<<product<<"\n";
                 break;
             }
-        } 
+        }
+    } 
     return 0;
 }
 
