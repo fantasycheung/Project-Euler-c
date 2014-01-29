@@ -26,9 +26,9 @@ int main()
         }
     }
     int sum = 0;
-    for (int i = 2; i<MAXN; i++) {
+    for (int i = 2; i < MAXN; i++) {
         int s = f[i];
-        if (s == i)continue;
+        if (s == i || s > MAXN)continue;
         if (f[s] == i) {
             sum = sum + i;
         }
